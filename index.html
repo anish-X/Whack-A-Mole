@@ -1,13 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-    
-    <script src="script.js"></script>
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1>Whac-A-Mole</h1>
+      </div>
+      <p>score: <span></span></p>
+      <p>Time: <span id="timer">60</span>s</p>
+      <div class="game-container">
+        <div class="firstRow">
+          <div class="hole">
+            <img
+              src="./images/mole.png"
+              id="showMoleId1"
+              class="showMole"
+              alt="mole"
+            />
+          </div>
+          <div class="hole">
+            <img
+              src="./images/mole.png"
+              id="showMoleId2"
+              class="showMole"
+              alt="mole"
+            />
+          </div>
+          <div class="hole">
+            <img
+              src="./images/mole.png"
+              id="showMoleId3"
+              class="showMole"
+              alt="mole"
+            />
+          </div>
+        </div>
+
+        <div class="secondRow">
+          <div class="hole">
+            <img
+              src="./images/mole.png"
+              id="showMoleId4"
+              class="showMole"
+              alt="mole"
+            />
+          </div>
+          <div class="hole">
+            <img
+              src="./images/mole.png"
+              id="showMoleId5"
+              class="showMole"
+              alt="mole"
+            />
+          </div>
+          <div class="hole">
+            <img
+              src="./images/mole.png"
+              id="showMoleId6"
+              class="showMole"
+              alt="mole"
+            />
+          </div>
+        </div>
+
+        <div class="thirdRow">
+          <div class="hole">
+            <img
+              src="./images/mole.png"
+              id="showMoleId7"
+              class="showMole"
+              alt="mole"
+            />
+          </div>
+          <div class="hole">
+            <img
+              src="./images/mole.png"
+              id="showMoleId8"
+              class="showMole"
+              alt="mole"
+            />
+          </div>
+          <div class="hole">
+            <img
+              src="./images/mole.png"
+              id="showMoleId9"
+              class="showMole"
+              alt="mole"
+            />
+          </div>
+        </div>
+      </div>
+
+      <img src="./images/mole.png" class="show1" alt="mole" />
+      <img src="./images/mole.png" class="show2" alt="mole" />
+      <img src="./images/mole.png" class="show3" alt="mole" />
+      <img src="./images/mole.png" class="show4" alt="mole" />
+
+      <audio id="myAudio" src="./audio/Run-Amok(chosic.com).mp3" loop></audio>
+      <audio id="whack" src="./audio/punch-41105.mp3"></audio>
+      <div class="btn-container">
+        <button type="button" onclick="playMusic()" id="playBtn">Play</button>
+        <button
+          type="button"
+          onclick="stopMusic()"
+          id="pauseBtn"
+          class="pauseBtn"
+        >
+          Stop
+        </button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
