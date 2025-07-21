@@ -38,7 +38,6 @@ function showRandomMole() {
 }
 
 function startGame() {
-    score = 0;
     timeDisplay.textContent = timeLeft;
     scoreDisplay.textContent = score;
 
@@ -69,7 +68,7 @@ function startGame() {
 
 function stopGame() {
     clearInterval(interval);
-    clearInterval(timer)
+    clearInterval(timer);
     moles.forEach(m => m.classList.add('hideMole'));
 }
 
