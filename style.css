@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    background-color: #fce3c4;
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+
+.container{
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+   
+}
+
+.heading{
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+p{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.game-container{
+    width: 450px;
+    height: 400px;
+    background-color: #deb887;
+    border: 1px solid silver;
+    border-radius: 2%;
+    gap: 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 20px;
+}
+
+.firstRow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.secondRow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.thirdRow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.hole{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #8b4513 ;
+    border: 2px solid #2b2b2b;
+    position: relative;
+}
+
+.btn-container{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px;  
+    margin-bottom: 50px; 
+    gap: 12px;
+    
+}
+
+button{
+    font-family: 'Roboto', sans-serif;
+    padding: 12px 18px;
+    border-radius: 6px;
+    font-size: 24px;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #5e2b1f;
+    color: #ffffff;
+}
+
+.show1{
+    width: 200px;
+    position: absolute;
+    bottom: -45px; 
+    left: -25px;
+    transform: rotate(40deg);
+    transition: bottom 0.5s ease-in;
+}
+
+.show2{
+    width: 200px;
+    position: absolute;
+    top: -45px; 
+    right: -25px;
+    transform: rotate(230deg) ;
+    transition: top 0.5s ease-in;
+}
+
+.show3{
+    width: 200px;
+    position: absolute;
+    top: -45px; 
+    left: -25px;
+    transform: rotate(140deg) ;
+    transition: top 0.5s ease-in;
+}
+
+.show4{
+    width: 200px;
+    position: absolute;
+    bottom: -45px; 
+    right: -25px;
+    transform: rotate(320deg) ;
+    transition: bottom 0.5s ease-in;
+}
+
+
+.hidden1{
+    position: absolute;
+    bottom: -300px;
+    left: -300px;
+    transition: 0.5s ease-in;
+
+}
+
+.hidden2{
+    position: absolute;
+    top: -300px;
+    right: -300px;
+    transition: 0.5s ease-in;
+
+}
+
+.hidden3{
+    position: absolute;
+    top: -300px;
+    left: -300px;
+    transition: 0.5s ease-in;
+
+}
+
+.hidden4{
+    position: absolute;
+    bottom: -300px;
+    right: -300px;
+    transition: 0.5s ease-in;
+
+}
+
+.showMole{
+    position: absolute;
+    width: 100px;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 0.4 ease-in;
+}
+
+.hideMole{
+    position: absolute;
+    width: 100px;
+    z-index: -10;
+    transition: z-index 0.3 ease;
+}
+ 
