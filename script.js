@@ -69,6 +69,7 @@ function startGame() {
 
 function stopGame() {
     clearInterval(interval);
+    clearInterval(timer)
     moles.forEach(m => m.classList.add('hideMole'));
 }
 
